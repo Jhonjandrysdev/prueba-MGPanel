@@ -1,21 +1,29 @@
 * {
     margin: 0;
     padding: 0;
+    
+}
+body {
+    margin: 0 auto;
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-style: normal;
-    overflow: hidden;
+  }
+html{
+    scroll-behavior: smooth;
 }
-
+@media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
 #home {
     background-image: url('/images/fondo.png');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100dvh;
-    width: 100vw;
-
+    height: 100vh;
+    width: 100%;
 }
-
 #home #hamburguer {
     width: 100%;
     height: 100vh;
@@ -31,20 +39,19 @@
 #header>#hamburguer {
     position: absolute;
     top: 30px;
-    left: 4%;
-    width: 4%;
+    left: 3%;
+    width: 3%;
     height: 4%;
 }
 
 #nav {
     justify-content: center;
-    display: flex;
+    display: none;
     width: 300px;
 
 }
 
 #nav>nav>ul {
-
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -113,12 +120,12 @@ nav ul li a:hover::after {
 #info-home {
     position: absolute;
     right: 10%;
-    top: 50%;
+    top: 45%;
     color: whitesmoke;
     font-size: medium;
 }
 
-#info-home > h1 {
+#info-home>h1 {
     font-weight: 700;
     font-size: 50px;
     margin-bottom: 10px;
@@ -132,17 +139,157 @@ h1>span {
 
 }
 
-#infot-home > h5{
+#info-home>h5 {
     font-size: 25px;
     font-weight: 400;
     letter-spacing: -4%;
 }
 
-#info-home > button {
+#info-home>button {
     margin-top: 20px;
     width: 228px;
     height: 55px;
     border-radius: 20px;
     background: rgba(0, 95, 115, 1);
     color: white;
+    border-color: transparent;
+    font-size: 18px;
+}
+
+/* SECCION 2 - INFO */
+#info {
+    background-image: url('/images/foto.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100dvh;
+    width: 100%;
+}
+
+#contain-info {
+    background-color: rgba(0, 0, 0, 0.678);
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    justify-content: center;
+}
+
+#contain-info>h1 {
+    font-weight: 700;
+    font-size: 50px;
+    color: rgba(233, 216, 166, 1);
+    margin-bottom: 20px;
+
+}
+
+#frase-info {
+    font-weight: 700;
+    font-size: 28px;
+    color: rgb(255, 255, 255);
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+#frase-info>span {
+    color: rgba(233, 216, 166, 1);
+    font-weight: 700;
+}
+
+#frase-info1 {
+    color: rgb(255, 255, 255);
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+#frase-info2 {
+    color: rgba(233, 216, 166, 1);
+    font-size: 40px;
+    font-weight: 700;
+}
+
+/* SECCION 3 */
+#section-3 {
+    background-image: url('/images/pajaro.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
+#section-4 {
+    height: 100vh;
+    width: 100%;
+}
+
+#contain-4 {
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+#contain-4 h1 {
+    color: rgba(0, 18, 25, 1);
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+#title-4 {
+    width: 32%;
+    text-align: center;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+#contain-4 p {
+    font-size: 18px
+}
+
+#contain-4 span {
+    color: rgb(0, 95, 115);
+    font-weight: 800;
+}
+
+#contain-4 #paragraph-4 {
+    width: 40%;
+    text-align: center;
+}
+
+#title-photos {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 20px;
+    font-weight: 700;
+    box-sizing: border-box;
+}
+
+#paragraph-photos span {
+    font-weight: 700;
+}
+
+#button-buy {
+    position: relative;
+    bottom: 0;
+    top: 55%;
+    left: 43%;
+    width: 228px;
+    height: 55px;
+    border-radius: 20px;
+    background: rgba(0, 95, 115, 1);
+    color: white;
+    border-color: transparent;
+    font-size: 18px;
+}
+#section-5{
+    background-image: url('/images/cuadro4.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
 }
