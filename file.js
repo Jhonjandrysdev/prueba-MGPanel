@@ -47,10 +47,10 @@ data.forEach((photos) => {
     div1.style.flexDirection = 'column'
     div1.style.alignItems = 'center'
 
-    if (window.innerWidth >= 768 && window.innerWidth <= 900) {
+    if (window.innerWidth <= 768) {
         div.style.flexDirection = 'column'
         div.style.alignItems = 'center'
-    }else if (window.innerWidth >= 1000 && window.innerWidth <= 1400) {
+    }else if (window.innerWidth >= 900 && window.innerWidth < 1200) {
         div.style.flexDirection = 'column'
     }else{
         div.style.flexDirection = 'row'
